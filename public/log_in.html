@@ -12,11 +12,14 @@
 	<body>
 		<div>
 			<form method="post">
-				<img src="images/logo.jpg" width="300" height="300">
+				<img src="images/logo.jpg" width="300" height="300" name="logo">
 				<label for="username"> Username: </label>
-				<input type="text" id="username" name="username"> <br>
+				<input type="text" id="username" name="username" required> <br>
 				<label for="password"> Password: </label>
-				<input type="text" id="password" name="password"> <br>
+				<input type="text" id="password" name="password" required> <br>
+				<input type="checkbox" name="sign_in_method" value="secure"> Secure sign in
+				<input type="checkbox" name="sign_in_method" value="keep"> Keep me sign in <br>
+				<input type="submit" value="I have lost my account"> <br> <br>
 		
 				<input type="submit" value="Sign in">
 			</form>
