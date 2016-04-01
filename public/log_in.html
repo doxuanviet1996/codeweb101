@@ -5,21 +5,21 @@
 		<title> Log in </title>
 		<meta name="log_in" content="Log in">
 		<link href="css/log_in.css" rel="stylesheet" type="text/css">
-
+		<script src="js/log_in.js"> </script>
 
 	</head>
 
 	<body>
 		<div>
 			<form method="post">
-				<img src="images/logo.jpg" width="300" height="300" name="logo">
+				<img src="images/logo.jpg" width="300" height="300" name="logo"> <br>
 				<label for="username"> Username: </label>
 				<input type="text" id="username" name="username" required> <br>
 				<label for="password"> Password: </label>
 				<input type="text" id="password" name="password" required> <br>
 				<input type="checkbox" name="sign_in_method" value="secure"> Secure sign in
 				<input type="checkbox" name="sign_in_method" value="keep"> Keep me sign in <br>
-				<input type="submit" value="I have lost my account"> <br> <br>
+				<button type="button" onclick="lost_account()"> I have lost my account </button> <br> <br>
 		
 				<input type="submit" value="Sign in">
 			</form>
