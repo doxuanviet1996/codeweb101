@@ -4,15 +4,19 @@
 	<head>
 		<title> Log in </title>
 		<meta name="log_in" content="Log in">
-		<link href="css/log_in.css" rel="stylesheet" type="text/css">
+		<link href="css/mystyles.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<script src="js/log_in.js"> </script>
 
 	</head>
 
-	<body>
-		<div>
-			<form method="post">
-				<img src="images/logo.jpg" width="300" height="300" name="logo"> <br>
+	<body class="toilanvd_body_background">
+		<div class="row toilanvd_user_div">
+			<div class="col-sm-6 toilanvd_logo_div">
+				<img src="images/logo.jpg" class="toilanvd_logo" name="logo"> <br>
+			</div>
+	
+			<form method="post" class="col-sm-6 toilanvd_login_div">
 				<label for="username"> Username: </label>
 				<input type="text" id="username" name="username" required> <br>
 				<label for="password"> Password: </label>
@@ -20,9 +24,17 @@
 				<input type="checkbox" name="sign_in_method" value="secure"> Secure sign in
 				<input type="checkbox" name="sign_in_method" value="keep"> Keep me sign in <br>
 				<button type="button" onclick="lost_account()"> I have lost my account </button> <br> <br>
-		
+
 				<input type="submit" value="Sign in">
 			</form>
+		</div>
+
+		<div class="toilanvd_language_div">
+			Language:
+			<select name = "language">
+				<option value = "english"> English </option>
+				<option value = "vietnamese"> Vietnamese </option>
+			</select> <br>
 		</div>
 	</body>
 </html>

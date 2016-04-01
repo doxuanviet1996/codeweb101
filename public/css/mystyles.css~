@@ -6,6 +6,8 @@
 .toilanvd_user_div{
 	background:pink;
 	position:relative;
+	width:200px;
+	height:200px;
 	top:30px;
 }
 
