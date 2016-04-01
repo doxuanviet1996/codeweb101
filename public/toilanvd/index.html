@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> ABC </title>	<!-- <title> used to write page's name showed on the tab -->
+		<meta name = "toilanvd" content = "webtest">	<!-- <meta> used for search engine to search the page -->
+		<link href = "css.css" rel = "stylesheet" type = "text/css">
+		<script>
+			alert("Hello!");			
+
+			var user_name;
+			user_name = prompt("What is your name?");
+			document.write("Welcome to my page " + user_name + "!" );
+			
+			if (confirm("Want to go to Disneyland?")) 
+			document.location.href
+			="http://park.hongkongdisneyland.com";
+		</script>
+	</head>
+	
+	<body>
+		<!-- text -->
+		<section>	<!-- (unman) <section> used to simplify the html code -->
+			<h2 id = "top"> This is a header </h2>
+			<p> This is a <span style = "color:orange"> test page </span> to learn html. </p>
+			<a href="http://www.kenh14.vn"> <button> Click here! </button> </a> <!-- <a> makes a link, <button> makes button -->
+
+			<h1>
+				<p  class = "test_style_1"> This is an unordered list: </p>
+				<ul>	<!-- unordered list -->
+					<li> Writing <sub> web </sub> </li>
+					<li> <sup> Making </sup> money </li> <!-- Use Math ML to code mathermatics -->
+					<li> <del> Be </del> <ins> sucessful </ins> </li>
+				</ul>
+			</h1>
+
+			<p  class = "test_style_1 test_style_2"> <!-- <pre> can be used to write a paragraph, it does not ignore end line -->
+				<mark> This is an ordered list: </mark>
+				Why all of them are in the same line?
+			</p>
+
+			<ol start = "11228361">	<!-- ordered list -->
+				<li> <u> Writing web </u> </li>
+				<li> <i> Making </i> <em> money </em> </li>
+				<li> <b> Be </b> <strong> sucessful </strong> </li>
+			</ol>
+
+			<hr> <!-- horizontal break line -->
+		</section>
+		
+		<!-- media -->
+		<section>	
+			<img src = "http://36.media.tumblr.com/e3fd087221117c25f926644a335354ec/tumblr_nj4gyknm4F1tuy4w7o1_1280.jpg"> <br>
+			<img src = "xiaoqiao.jpg" width = "300" height = "600">
+			<img src = "xiaoqiao.jpg" width = "300">
+			<img src = "xiaoqiao.jpg" width = "25%">
+
+			<p> Megumeru <audio src = "abc.mp3" controls loop id = "music"> </audio> </p>	<!-- can use 'autoplay' feature -->
+
+			<p>			
+				<video src = "volume up.mp4" width = "300" controls alt = "Volume up"> Volume up - 4minute </video>	
+				<!-- 'alt' attribute is used for search engine -->			
+			</p>
+		</section>
+		
+		<!-- links -->
+		<div style = "background: red; font-size: 20pt; font-family: times; position: absotule;">
+			<p> Why don't you go to <a href = "https://www.facebook.com/"> facebook </a> </p>
+			<p> Why don't you go to <a href = "https://www.google.com/"> <img src = "http://www.wired.com/wp-content/uploads/2015/09/google-logo.jpg" width = "150"> </a> </p>
+			<p> Why don't you go to <a href = "https://www.gmail.com/"> <button> Gmail </button> </a> </p>
+			<p> Go to the song <a href = "#music"> Megumeru </a> <p>
+			<p> Go to the video in test.html <a href = "test.html#video"> Volume up </a> <p>
+		</div>
+
+		<div style = "background: red; font-size: 20pt; font-family: courier; position: relative; top:15px; left: 60px;">
+			<table>
+				<thead>		<!-- name of the columns -->
+					<tr> <th> Name A </th> <th class = "on_top_left"> Name B </th> <th> Name C </th> <tr>
+				</thead>
+				<tbody>
+					<tr> <td  class = "on_top_left"> AAAAAAAAAA </td> <td> BBBBBBBBB </td> <td> CCCCCCCCCC </td> <tr>
+					<tr> <td> AAAAAAAAA1 </td> <td class = "test_style_2"> BBBBBBBB1 </td> <td> CCCCCCCCC1 </td> <tr>
+					<tr> <td> AAAAAAAAA2 </td> <td> BBBBBBBB2 </td> <td class = "test_style_1"> CCCCCCCCC1 </td> <tr>
+				</tbody>
+			</table>
+		</div>
+
+		<form action = "110.76.70.113" method = "post"> <!-- 'action' is address where we sent information, 'method' = get/post -->
+		<!-- 'get' method will show every word you typed on the link, and also you cannot send a lot of characters to server -->
+		<!-- therefore, use 'post' method instead -->
+			<p> Type some text here: </p>
+			<textarea rows = "15" cols = "60" name = "feedback" value = "Please type!" required> </textarea> <br>
+			<input type = "submit" value = "send"> <br> <br>		<!-- create a submit button named 'send' -->
+			<!-- 'submit' button must be once at the end of the form -->
+		</form>
+
+		<form>			
+			<label for = "typing"> Free typing: </label>	<!-- 'label' tag: click "Free typing", it will move to type field -->
+			<!-- typing box: text -->
+			<input type = "text" id = "typing" name = "free-typing" autofocus> <br> <!-- 'name' is set to be what is type -->
+			
+			Please check some letters: <br>
+			<!-- check box: checkbox -->
+			<input type = "checkbox" name = "letter" value = "A"> A <br>
+			<input type = "checkbox" name = "letter" value = "B"> B <br>
+			
+			Please choose one number: <hr>
+			<!-- option box: radio -->
+			<input type = "radio" name = "number" value = "1"> 1 <br>
+			<input type = "radio" name = "number" value = "2"> 2 <br>
+
+			Type a password: <br>
+			<!-- password box: password -->
+			<input type = "password" name = "user_password" placeholder = "Type a password" autofocus> <br>
+			<input type = "submit" value = "send"> <br> <br>
+
+			Select a city: <br>
+			<!-- selection box: 'select' tag -->
+			<select name = "city">
+				<option value = "hn"> Ha Noi </option>
+				<option value = "tphcm"> Ho Chi Minh city </option>
+			</select> <br>
+			<input type = "submit" value = "Submit"> <br> <br>
+		</form>
+
+		<!-- Upload files -->
+		<form action = "110.76.70.113" method = "post" enctype = "multipart/forn-data">			
+			<fieldset>
+				<legend> Upload files: </legend>			
+				Please attach an image: <br>
+				<input type = "file" name = "img"> <br>
+				Press this button to send it: <br>
+				<input type = "submit" value = "Upload"> <br>
+			</fieldset>
+		</form> <br>
+		
+		<!-- some other kind of input -->
+		<form>
+			<label for = "age"> Your age: </label> <!-- type = "number" -->
+			<input type = "number" id = "age" name = "year_old" min = "0" max = "99" step = "1" value = "18" required> <br>
+			<label for = "birthday"> Your birthday: </label>	<!-- type = "date" -->
+			<input type = "date" id = "birthday" name = "birthday" autofocus> <br> <!-- does not work -->
+			<label for = "sleep"> Sleeping time: </label>		<!-- type = "time" -->
+			<input type = "time" id = "sleep" name = "sleeping_time"> <br> <!-- does not work -->
+			<label for = "color"> Color you like: </label>		<!-- type = "color" -->
+			<input type = "color" id = "color" name = "color"> <br>
+			<label for = "speed"> Your run speed: </label>		<!-- type = "range" -->
+			0 <input type = "range" id = "speed" name = "run_speed" min = "0" max = "100" step = "1" value = "50"> 100 (km/h) <br>
+			
+			<input type = "submit" value = "click here to submit"> <br>
+		</form>
+	</body>
+
+</html>
+
