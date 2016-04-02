@@ -1,3 +1,34 @@
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.row-footer{
+    background-color: #AfAfAf;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #7986CB ;
+    color:floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
 /* Below is css of toilanvd */
 .toilanvd_body_background{
 	background:red;
@@ -6,7 +37,7 @@
 .toilanvd_user_div{
 	background:pink;
 	position:relative;
-	top:30px;
+	top:130px;
 }
 
 .toilanvd_logo_div{
@@ -27,5 +58,6 @@
 .toilanvd_language_div{
 	text-align:center;
 	position:relative;
-	top:80px;
+	top:180px;
 }
+
