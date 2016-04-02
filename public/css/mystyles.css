@@ -1,0 +1,31 @@
+/* Below is css of toilanvd */
+.toilanvd_body_background{
+	background:red;
+}
+
+.toilanvd_user_div{
+	background:pink;
+	position:relative;
+	top:30px;
+}
+
+.toilanvd_logo_div{
+	text-align:right;
+}
+
+.toilanvd_logo{
+	width:200px;
+	height:200px;
+}
+
+.toilanvd_login_div{
+	text-align:left;
+	position:relative;
+	top:30px;
+}
+
+.toilanvd_language_div{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
