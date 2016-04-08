@@ -1,63 +1,40 @@
-.row-header{
-    margin:0px auto;
-    padding:0px auto;
-}
-
-.row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
-}
-
-.row-footer{
-    background-color: #AfAfAf;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
-}
-
-.jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #7986CB ;
-    color:floralwhite;
-}
-
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
-}
-
 /* Below is css of toilanvd */
-.toilanvd_body_background{
-	background:red;
+@charset "utf-8";
+
+.toilanvd_all_body_div{
+    width:570px;
+    margin:auto;
+    /* background:url(../images/logo.jpg) center 8px; */
 }
 
 .toilanvd_user_div{
 	background:pink;
-	position:relative;
-	top:130px;
+    margin:auto;
+    width:570px;
 }
 
 .toilanvd_logo_div{
-	text-align:right;
+    float:left;
+    width:180px;
 }
 
 .toilanvd_logo{
-	width:200px;
-	height:200px;
+	width:140px;
+    background:red no-repeat center right;
 }
 
 .toilanvd_login_div{
-	text-align:left;
-	position:relative;
-	top:30px;
+	float:right;
+    width:380px;
 }
 
 .toilanvd_language_div{
 	text-align:center;
 	position:relative;
 	top:180px;
+}
+
+.toilanvd_border_right{
+    border-right:1px solid;
 }
 
