@@ -1,0 +1,7 @@
+{
+	"hostname" : "",
+	"port" : "3000",	
+	"mongoUrl" : "mongodb://localhost:27017/codeweb101",
+	"userUrl" : "http://localhost:3000/users",
+	"secret" : "codeweb101"
+}
